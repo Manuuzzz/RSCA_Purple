@@ -1,0 +1,38 @@
+een box met nieuws
+box met logo
+media breakpoints 576 images
+
+border top bottom news: on active also change size
+
+onhover: border radius animation:
+https://www.w3schools.com/css/css3_transitions.asp
+and use a mixin
+
+when small screen: auto slide news, only 1 box
+
+box with twitterfeed from rsca
+box met logo wit transparant
+
+change fonts: done
+
+footer: social media icons / footy icons 
+<div class="icon-foot">
+
+<i class="fas fa-futbol fa-5x colorsalmon2"></i></div>
+
+hoover effects on text
+
+remove unnec fonts
+
+
+layout: logo vanboven centered
+then menu below: centered
+content: background picture in lightgray overlay + big text - front page
+news: 1 big box left 2 smaller boxes right
+both gray|purple
+footer
+
+wordpress:
+create templates
+
+create front page php file as front page and create a page instead of a post for the index title
