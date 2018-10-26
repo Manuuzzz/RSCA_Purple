@@ -30,7 +30,7 @@ if ( $current == 'nl'){
  if ( $query -> have_posts() ) : while ( $query -> have_posts() ) : $query -> the_post(); 
  ?>
  <div class="indexTitle">  
-  <?php  //the_title();   ?>
+ <?php  the_title();   ?>
  </div><!-- end indexTitle -->
  <?php
 endwhile; 

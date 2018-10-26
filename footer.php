@@ -1,13 +1,13 @@
 <?php wp_footer(); ?>
 
-<!--
+
 <div class="sponsorContainer">
-<div class="logo">
-<img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="RSCA Logo">
+
+<div class="icons"><i class="fab fa-facebook-f fa-2x"></i></div>
 </div>
 
-</div>--><!-- end class container -->
-      test 
+</div><!-- end class container -->
+      
  
 </body>
 

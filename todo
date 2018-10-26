@@ -1,5 +1,4 @@
-een box met nieuws
-box met logo
+
 media breakpoints 576 images
 
 border top bottom news: on active also change size
@@ -35,5 +34,3 @@ footer
 wordpress:
 create templates
 
-create front page php file as front page and create a page instead of a post for the index title
-git fixed 

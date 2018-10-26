@@ -121,7 +121,7 @@ nav ul {
 
 .indexTitle {
   font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif;
-  font-size: 5em;
+  font-size: 5vw;
   font-weight: bold;
   color: #ff9f7c;
   opacity: 0.5; }
@@ -160,15 +160,14 @@ nav ul {
 
 .grid-footer {
   grid-area: grid-footer;
-  background: #EDEDED; }
+  background: #262626; }
 
 .sponsorContainer {
   display: flex;
-  flex-direction: row; }
-  .sponsorContainer img {
-    width: 100%;
-    height: 100%;
-    max-width: 150px;
-    max-height: 150px; }
+  flex-direction: row;
+  justify-content: center; }
+  .sponsorContainer .icons {
+    color: #EDEDED;
+    padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,4 @@
 <?php
-define('WP_EXPORTER_ADMIN_BAR', true);
 
 function RSCA_purple_theme_setup() {
   
