@@ -13,9 +13,21 @@
 <div class="newsContent">
 <article>
 
-       
+   <?php
+$current = pll_current_language(); 
+?>    
        <?php 
- if (have_posts() ) : while (  have_posts() ) :  the_post(); 
+
+
+if ( $current == 'nl'){
+$args = array( 'category_name' => 'news','lang' => 'nl');}
+if ( $current == 'fr'){
+      $args = array( 'category_name' => 'newsfr','lang' => 'fr');}
+      if ( $current == 'en'){
+            $args = array( 'category_name' => 'newsen','lang' => 'en');}
+
+$query = new WP_Query( $args ); 
+ if ($query ->have_posts() ) : while (  $query ->have_posts() ) :  $query ->the_post(); 
  ?>
 
            <div >

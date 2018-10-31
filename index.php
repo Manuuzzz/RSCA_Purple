@@ -8,9 +8,11 @@
 <main>
 <div class="flex-index">
 
-    
-<?php 
+    <?php
 $current = pll_current_language(); 
+?>
+<?php 
+
 
 if ( $current == 'fr'){
  $args = array( 'category_name' => 'premierepage','lang' => 'fr');

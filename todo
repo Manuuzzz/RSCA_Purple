@@ -1,5 +1,6 @@
 
 media breakpoints 576 images
+use icons instead of word for smaller screens (fontawesome?) - display hidden - hamburger
 
 border top bottom news: on active also change size
 
