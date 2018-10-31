@@ -30,7 +30,7 @@ html {
     body {
     margin: 0px;
     font-size: 1vw;
-    background:$lightgray;
+    background:$dark;
     font-family: $font-stack-content;
     }
 }
@@ -245,6 +245,8 @@ font: $font-stack-title;
 .grid-footer {
 grid-area: grid-footer;
 background:$dark;
+margin: 0px;
+padding:0px;
 
 }
 
@@ -252,6 +254,7 @@ background:$dark;
     display: flex;
     flex-direction: row;
     justify-content: center;
+ 
     
 .icons {
 color: $lightgray;

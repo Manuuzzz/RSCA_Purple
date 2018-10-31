@@ -27,10 +27,13 @@ remove unnec fonts
 layout: logo vanboven centered
 then menu below: centered
 content: background picture in lightgray overlay + big text - front page
-news: 1 big box left 2 smaller boxes right
+news: 1 big box left 2 smaller boxes right of 2 vierkanten boven 1 rechthoek onder (foto - titel - cntent)
 both gray|purple
 footer
 
 wordpress:
 create templates
 
+url hiding
+
+change title page to not use blog post
