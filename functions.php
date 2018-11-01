@@ -6,6 +6,7 @@ function RSCA_purple_theme_setup() {
 
 register_nav_menus( array(
 	'primary' => __( 'Primary Menu', 'RSCA_purple' ),
+	'secondary' => __( 'Secondary Menu', 'RSCA_purple' ),
 ) );
 
 }

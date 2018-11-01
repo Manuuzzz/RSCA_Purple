@@ -54,6 +54,18 @@ $font-stack-content:'Roboto Slab','Montserrat','Lato',sans-serif;
     "grid-footer";
     }
     
+    
+    
+    .grid-menu {
+    grid-area: grid-menu;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border: 0px;
+    
+    
+    }
+
     .flex-logo-sm {
         
         background-color: $lightgray;
@@ -109,16 +121,6 @@ $font-stack-content:'Roboto Slab','Montserrat','Lato',sans-serif;
     
     }
     
-    .grid-menu {
-    grid-area: grid-menu;
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    border: 0px;
-    
-    
-    }
-    
     .flex-menu {
     background-color: $dark;
     color: $lightgray;
@@ -130,48 +132,25 @@ $font-stack-content:'Roboto Slab','Montserrat','Lato',sans-serif;
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    
-    }
 
-.flex-menu-sm {
-background-color: $dark;
-color: $lightgray;
-display: none;
-flex-direction: column;
-width: 100%;
-justify-content: center;
-align-items: center;
-margin: 0;
-padding-top: 10px;
-padding-bottom: 10px;
-
-        }
-    
-    .flex-menu-title {
-    font-family: $font-stack-title;
-    }
-    
-    .colorsalmon2 {
-    color: $salmon_2;
-    }
-    
-    .colorsalmon1 {
-    color: $salmon_1;
-    }
-    
     .flex-menu-nav {
         font-family: $font-stack-title;
-    
+        position: absolute;
+      
     }
         
-    nav ul {
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+    
+    ul {
     
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: center;
     margin: 0px;
-    padding-left: 50px;
+    padding-left: 0px;
     
           
     li {
@@ -190,7 +169,72 @@ padding-bottom: 10px;
             }
     }
     
+    }}
+    .languagemenu {
+
+        height: 30px;
+        
+        
+         ul {
+
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: center;
+            margin: 0px;
+            padding-left: 0px;
+            
+                  
+            li {
+            display: list-item;
+            margin: 0px;
+            padding-right: 20px;
+            
+            a {
+                text-decoration: none;
+                color: $lightgray;
+            
+              
+                } 
+                a:hover {
+                    color: $salmon_1;
+                    }
+            }
+
+    }}
     }
+
+.flex-menu-sm {
+background-color: $dark;
+color: $lightgray;
+display: none;
+flex-direction: column;
+width: 100%;
+justify-content: center;
+align-items: center;
+margin: 0;
+padding-top: 10px;
+padding-bottom: 10px;
+
+        }
+    
+    .flex-menu-title {
+    font-family: $font-stack-title;
+    margin-right: auto;
+    padding-left: 20px;
+     
+    
+    }
+    
+    .colorsalmon2 {
+    color: $salmon_2;
+    }
+    
+    .colorsalmon1 {
+    color: $salmon_1;
+    }
+    
+   
     
     .grid-content {
     grid-area: grid-content;
@@ -334,6 +378,135 @@ padding-bottom: 10px;
         }
         
         
+        
+        
+        .grid-menu {
+        grid-area: grid-menu;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        border: 0px;
+    
+        
+        }
+        
+       
+        .flex-menu {
+        background-color: $dark;
+        color: $lightgray;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      
+        }
+
+        .flex-menu-sm {
+            background-color: $dark;
+            color: $lightgray;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            .flex-menu-nav {
+                font-family: $font-stack-title;
+            
+            }
+                
+            nav ul {
+            
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            justify-content: center;
+            margin: 0px;
+            padding-left: 50px;
+            
+                  
+            li {
+            display: list-item;
+            margin: 0px;
+            padding-right: 20px;
+            
+            a {
+                text-decoration: none;
+                color: $lightgray;
+            
+              
+                } 
+                a:hover {
+                    color: $salmon_1;
+                    }
+            }
+            
+            }
+            
+            .languagemenu-sm {
+
+                height: 30px;
+                
+                 ul {
+        
+                    display: flex;
+                    flex-direction: row;
+                    list-style: none;
+                    justify-content: center;
+                    margin: 0px;
+                    padding-left: 0px;
+                    
+                          
+                    li {
+                    display: list-item;
+                    margin: 0px;
+                    padding-right: 10px;
+                    
+                    a {
+                        text-decoration: none;
+                        color: $lightgray;
+                    
+                      
+                        } 
+                        a:hover {
+                            color: $salmon_1;
+                            }
+                    }
+
+            }}
+            .flex-menu-sm-icons {
+                font-size: 1.8em;
+                padding-right: 20px;
+                align-self: flex-end;
+                
+                
+            }
+
+            .flex-menu-sm-listed {
+                height: 50px;
+                background-color: red;
+                display: none;
+            }
+            }
+
+            .site-title-sm {
+                font-family: $font-stack-title;
+                width: 100%;
+                text-align: center;
+                position: absolute;
+              
+                }
+        
+        .flex-menu-title {
+        font-family: $font-stack-title;
+        }
+
         .flex-logo-sm {
         
             background-color: $lightgray;
@@ -342,15 +515,19 @@ padding-bottom: 10px;
             width: 100%;
             justify-content: center;
             align-items: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 0px;
+            padding-bottom: 0px;
             color: $font-dark;
+            
+            
             .RSCA {
             font-size: 2.5em;
             font-family: $font-stack-content;
             font-weight: bold;
             color: $purple_primary;
                 }}
+
+
         .flex-logo {
         
         background-color: $lightgray;
@@ -362,6 +539,7 @@ padding-bottom: 10px;
         padding-top: 10px;
         padding-bottom: 10px;
         color: $font-dark;
+        
         .RSCA {
         font-size: 2.5em;
         font-family: $font-stack-content;
@@ -384,55 +562,6 @@ padding-bottom: 10px;
         text-align: center;
         padding-left: 50px;
         padding-right: 50px;
-        
-        
-        }
-        
-        .grid-menu {
-        grid-area: grid-menu;
-        padding: 0px;
-        margin: 0px;
-        width: 100%;
-        border: 0px;
-        
-        
-        }
-        
-        .flex-menu {
-        background-color: $dark;
-        color: $lightgray;
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        
-        }
-
-        .flex-menu-sm {
-            background-color: $dark;
-            color: $lightgray;
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            margin: 20px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            
-            .flex-menu-sm-icons {
-                font-size: 1.7em;
-                padding-right: 30px;
-
-            }
-            }
-        
-        .flex-menu-title {
-        font-family: $font-stack-title;
         }
         
         .colorsalmon2 {
@@ -443,43 +572,12 @@ padding-bottom: 10px;
         color: $salmon_1;
         }
         
-        .flex-menu-nav {
-            font-family: $font-stack-title;
         
-        }
-            
-        nav ul {
-        
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        justify-content: center;
-        margin: 0px;
-        padding-left: 50px;
-        
-              
-        li {
-        display: list-item;
-        margin: 0px;
-        padding-right: 20px;
-        
-        a {
-            text-decoration: none;
-            color: $lightgray;
-        
-          
-            } 
-            a:hover {
-                color: $salmon_1;
-                }
-        }
-        
-        }
         
         .grid-content {
         grid-area: grid-content;
         padding: 0;
-        margin: 0; 
+       
         background: url(./images/background_stadium.png) center center;
         background-repeat:no-repeat;
         background-size:cover;

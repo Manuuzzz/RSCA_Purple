@@ -23,13 +23,19 @@
 <header>
 
 <div class="flex-logo-sm"><!-- this is visible in small screens -->
-<div class="logo">
-<img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="RSCA Logo">
+<div class="logo"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="RSCA Logo"></div>
 </div>
-<div class="site-title colorsalmon1">
-<h1><?php bloginfo('name'); ?></h1>
+
+<div class="flex-menu-sm"><!-- this is visible in small screens -->
+<div class="site-title-sm colorsalmon1"><?php bloginfo('name'); ?></div>
+<div class="flex-menu-sm-icons colorsalmon1"><a href="<?php get_home_url() ?>"><i class="fas fa-bars"></i></a></div>
+<div class="flex-menu-sm-listed">test</div>
 </div>
-</div>  <!-- end flex-logo -->
+
+
+
+
+
 
 <div class="flex-logo"><!-- this is visible in normal screens -->
 <div class="logo">
@@ -52,16 +58,12 @@ $siteurl = get_site_url();
 if ( $current == 'fr'){
 $fr = '/fr/blogfr';
 $news_fr = $siteurl.$fr;
-echo $news_fr;
+
 }
 
  ?>
 
-<div class="flex-menu-sm"><!-- this is visible in small screens -->
-<div class="flex-menu-sm-icons"><a href="<?php get_home_url() ?>"><i class="fas fa-home"></i></a></div>
-<div class="flex-menu-sm-icons"><a href="<?php $news_fr ?>"><i class="far fa-newspaper"></a></i></div>
-<?php echo get_site_url(); ?>
-</div><!-- end flex-menu -->
+
 
 
 <div class="flex-menu"> <!-- this is visible in normal screens -->
@@ -75,16 +77,11 @@ $args = array(
 ?>
 
 <?php wp_nav_menu($args); ?>
-
-<!--
-<ul>
-<li><a class="nav-link" href="#news">News</a></li>
-<li><a class="nav-link" href="#contactus">Contact us</a></li>
-<li><a class="nav-link" href="#gallery">Gallery</a></li>
-<li><a class="nav-link" href="#aboutus">About us</a></li>
-</ul>-->
+<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'container_class' => 'languagemenu' ) ); ?>
 </nav>
+
 </div><!-- end flex-menu-nav -->
+
 </div><!-- end flex-menu -->
 </header>
 </div> <!-- end grid-menu -->

@@ -38,3 +38,12 @@ create templates
 url hiding
 
 change title page to not use blog post
+
+smaller file size for mobile screen background img
+
+add in menu links:
+<div class="flex-menu-sm-icons"><a href="<?php get_home_url() ?>"><i class="fas fa-home"></i></a></div>
+<div class="flex-menu-sm-icons"><a href="<?php $news_fr ?>"><i class="far fa-newspaper"></a></i></div>
+
+
+<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'container_class' => 'languagemenu' ) ); ?>
