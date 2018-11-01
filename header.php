@@ -28,7 +28,7 @@
 
 <div class="flex-menu-sm"><!-- this is visible in small screens -->
 <div class="site-title-sm colorsalmon1"><?php bloginfo('name'); ?></div>
-<div class="flex-menu-sm-icons colorsalmon1"><a href="<?php get_home_url() ?>"><i class="fas fa-bars"></i></a></div>
+<div class="flex-menu-sm-icons colorsalmon1"><a href="#"><i class="fas fa-bars"></i></a></div>
 <div class="flex-menu-sm-listed">test</div>
 </div>
 
