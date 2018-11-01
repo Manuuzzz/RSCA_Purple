@@ -21,7 +21,17 @@
 
 <div class="grid-menu">
 <header>
-<div class="flex-logo">
+
+<div class="flex-logo-sm"><!-- this is visible in small screens -->
+<div class="logo">
+<img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="RSCA Logo">
+</div>
+<div class="site-title colorsalmon1">
+<h1><?php bloginfo('name'); ?></h1>
+</div>
+</div>  <!-- end flex-logo -->
+
+<div class="flex-logo"><!-- this is visible in normal screens -->
 <div class="logo">
 <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="RSCA Logo">
 </div>
@@ -33,6 +43,9 @@
 RSCA
 </div>
 </div>  <!-- end flex-logo -->
+
+
+
 <?php
 $current = pll_current_language(); 
 $siteurl = get_site_url();
@@ -41,16 +54,17 @@ $fr = '/fr/blogfr';
 $news_fr = $siteurl.$fr;
 echo $news_fr;
 }
+
  ?>
 
-<div class="flex-menu-sm">
+<div class="flex-menu-sm"><!-- this is visible in small screens -->
 <div class="flex-menu-sm-icons"><a href="<?php get_home_url() ?>"><i class="fas fa-home"></i></a></div>
 <div class="flex-menu-sm-icons"><a href="<?php $news_fr ?>"><i class="far fa-newspaper"></a></i></div>
 <?php echo get_site_url(); ?>
 </div><!-- end flex-menu -->
 
 
-<div class="flex-menu"> <!-- this is hidden in small screens -->
+<div class="flex-menu"> <!-- this is visible in normal screens -->
 <div class="flex-menu-title"><span class="colorsalmon2">64</span> Les Géiants d'Ath</div>
 <div class="flex-menu-nav">
 <nav class="nav-bar">

@@ -12,30 +12,26 @@
 <div class="newsSlideBG"></div>
 <div class="newsContent">
 <article>
-
-   <?php
+<?php
 $current = pll_current_language(); 
-?>    
-       <?php 
-
 
 if ( $current == 'nl'){
 $args = array( 'category_name' => 'news','lang' => 'nl');}
+
 if ( $current == 'fr'){
-      $args = array( 'category_name' => 'newsfr','lang' => 'fr');}
-      if ( $current == 'en'){
-            $args = array( 'category_name' => 'newsen','lang' => 'en');}
+$args = array( 'category_name' => 'newsfr','lang' => 'fr');}
+
+if ( $current == 'en'){
+$args = array( 'category_name' => 'newsen','lang' => 'en');}
 
 $query = new WP_Query( $args ); 
- if ($query ->have_posts() ) : while (  $query ->have_posts() ) :  $query ->the_post(); 
+if ($query ->have_posts() ) : while (  $query ->have_posts() ) :  $query ->the_post(); 
  ?>
 
-           <div >
-        
-        <h2 class="newsTitle"><?php the_title(); echo $current ?> </h2>
-           <?php  the_content(); ?>
-
-           </div><!-- #content -->
+<div >
+<h2 class="newsTitle"><?php the_title(); echo $current ?> </h2>
+<?php  the_content(); ?>
+</div><!-- #content -->
 
 <?php
 endwhile; 
@@ -44,15 +40,9 @@ endwhile;
 </article>
 </div>
  </div>
-
-
 </div> <!-- end newsContainer -->
-
-
-
 </div><!-- end flex-index -->
 </main>
-
 </div><!-- end grid-content -->
 
 
