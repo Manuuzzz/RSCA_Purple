@@ -7,38 +7,19 @@
 
 <main>
 <div class="flex-index">
-
-    <?php
-$current = pll_current_language(); 
-?>
-<?php 
-
-
-if ( $current == 'fr'){
- $args = array( 'category_name' => 'premierepage','lang' => 'fr');
-$query = new WP_Query( $args ); } 
-if ( $current == 'nl'){
-    $args = array( 'category_name' => 'hoofdpagina','lang' => 'nl'); 
-    $query = new WP_Query( $args );}  
-    if ( $current == 'en'){
-    $args = array( 'category_name' => 'firstpage','lang' => 'en'); 
-    $query = new WP_Query( $args );}
-    ?>
- 
- 
- <!-- use slugname -->
+<div class="indexTitle"> 
 
   <?php
- if ( $query -> have_posts() ) : while ( $query -> have_posts() ) : $query -> the_post(); 
+ if (  have_posts() ) : while (  have_posts() ) : the_post(); 
  ?>
- <div class="indexTitle">  
-  <?php  //the_title();   ?>
- </div><!-- end indexTitle -->
+
+  <?php  the_content();   ?>
+
  <?php
 endwhile; 
  endif; 
- wp_reset_postdata(); ?>
-
+  ?>
+</div><!-- end indexTitle -->
 </div><!-- end flex-index -->
 </main>
 

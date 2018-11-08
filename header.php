@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
    
     <?php wp_head(); ?>
+
+
     <div class="container">
 
 
@@ -87,4 +89,5 @@ $args = array(
 </div> <!-- end grid-menu -->
 
 </head>
+<body>
 

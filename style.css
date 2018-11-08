@@ -18,6 +18,15 @@ html body {
   background: #262626;
   font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif; }
 
+.container-main {
+  font-size: 2vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto minmax(70vh, auto) auto;
+  grid-gap: 0px;
+  grid-template-areas: "grid-menu"  "grid-content-main" "grid-footer"; }
+
 .container {
   font-size: 2vh;
   width: 100%;
@@ -155,9 +164,49 @@ html body {
   grid-area: grid-content;
   padding: 0;
   margin: 0;
+  background: #EDEDED; }
+
+.grid-content-main {
+  grid-area: grid-content-main;
+  padding: 0;
+  margin: 0;
   background: url(./images/background_stadium.png) center center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.flex-news-container {
+  display: flex;
+  flex-direction: row;
+  background: #EDEDED;
+  min-width: 80%;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center; }
+
+.flex-thumbnail {
+  background: #EDEDED;
+  position: relative;
+  width: 720px;
+  height: 540px; }
+  .flex-thumbnail img {
+    width: 720px;
+    height: 540px;
+    object-fit: cover; }
+  .flex-thumbnail .textonimage {
+    position: absolute;
+    top: 440px;
+    background: rgba(57, 54, 125, 0.9);
+    left: 0px;
+    margin: 0;
+    width: 720px;
+    height: 100px;
+    font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif;
+    color: #EDEDED;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center; }
 
 .flex-index {
   color: #EDEDED;
@@ -168,13 +217,12 @@ html body {
   justify-content: center;
   align-items: center;
   position: absolute; }
-
-.indexTitle {
-  font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif;
-  font-size: 5vw;
-  font-weight: bold;
-  color: #ff9f7c;
-  opacity: 0.5; }
+  .flex-index .indexTitle {
+    font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #ff9f7c;
+    opacity: 0.8; }
 
 .newsContainer {
   display: flex;
@@ -228,6 +276,15 @@ html body {
     font-size: 1vw;
     background: #262626;
     font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif; }
+
+  .container-main {
+    font-size: 2vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(70vh, auto) auto;
+    grid-gap: 0px;
+    grid-template-areas: "grid-menu"  "grid-content-main" "grid-footer"; }
 
   .container {
     font-size: 2vh;
@@ -367,6 +424,11 @@ html body {
   .grid-content {
     grid-area: grid-content;
     padding: 0;
+    background: #EDEDED; }
+
+  .grid-content-main {
+    grid-area: grid-content-main;
+    padding: 0;
     background: url(./images/background_stadium.png) center center;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -376,17 +438,15 @@ html body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 60%;
     justify-content: center;
     align-items: center;
     position: absolute; }
-
-  .indexTitle {
-    font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif;
-    font-size: 5vw;
-    font-weight: bold;
-    color: #ff9f7c;
-    opacity: 0.5; }
+    .flex-index .indexTitle {
+      font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif;
+      font-size: 5vw;
+      font-weight: bold;
+      color: #ff9f7c;
+      opacity: 0.8; }
 
   .newsContainer {
     display: flex;

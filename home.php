@@ -6,42 +6,39 @@
 <div class="grid-content">
 
 <main>
-<div class="flex-index">
-<div class="newsContainer">
-<div class="newsSlide">
-<div class="newsSlideBG"></div>
-<div class="newsContent">
-<article>
+
+
 <?php
+
 $current = pll_current_language(); 
 
 if ( $current == 'nl'){
 $args = array( 'category_name' => 'news','lang' => 'nl');}
-
 if ( $current == 'fr'){
 $args = array( 'category_name' => 'newsfr','lang' => 'fr');}
-
 if ( $current == 'en'){
 $args = array( 'category_name' => 'newsen','lang' => 'en');}
-
 $query = new WP_Query( $args ); 
-if ($query ->have_posts() ) : while (  $query ->have_posts() ) :  $query ->the_post(); 
- ?>
+if ($query ->have_posts() ) : while ( $query ->have_posts() ) : $query ->the_post(); 
+echo '<div class="flex-news-container">';
 
-<div >
-<h2 class="newsTitle"><?php the_title(); echo $current ?> </h2>
-<?php  the_content(); ?>
-</div><!-- #content -->
+if(  has_post_thumbnail()) :
+    
+   echo '<div class="flex-thumbnail">';
+    the_post_thumbnail();
+    echo '<div class="textonimage">';
+    the_post(); 
+    echo '</div></div>';
+endif;
 
-<?php
+echo '</div>';
 endwhile; 
- endif; 
- wp_reset_postdata(); ?>
-</article>
-</div>
- </div>
-</div> <!-- end newsContainer -->
-</div><!-- end flex-index -->
+endif; 
+wp_reset_postdata();
+
+?>
+
+
 </main>
 </div><!-- end grid-content -->
 

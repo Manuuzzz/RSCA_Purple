@@ -9,7 +9,21 @@ register_nav_menus( array(
 	'secondary' => __( 'Secondary Menu', 'RSCA_purple' ),
 ) );
 
+
+// Thumbnail
+add_theme_support('post-thumbnails');
+
+//Excerpt length
+function custom_excerpt_length( $length ) {
+	return 4;
 }
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+}
+
 
 add_action('after_setup_theme','RSCA_purple_theme_setup');
 ?>
+
+
+

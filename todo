@@ -47,3 +47,5 @@ add in menu links:
 
 
 <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'container_class' => 'languagemenu' ) ); ?>
+
+change site title front page with text in editor
