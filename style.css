@@ -11,12 +11,12 @@ Text Domain: RSCA_Purple
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Alegreya+Sans|Lato|Merriweather+Sans|Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Merriweather+Sans|Montserrat|Rock+Salt");
 html body {
   margin: 0px;
   font-size: 1vw;
   background: #262626;
-  font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif; }
+  font-family: "Roboto Slab", "Montserrat", sans-serif; }
 
 .container-main {
   font-size: 2vh;
@@ -53,11 +53,6 @@ html body {
   padding-top: 10px;
   padding-bottom: 10px;
   color: #232323; }
-  .flex-logo-sm .RSCA {
-    font-size: 2.5em;
-    font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif;
-    font-weight: bold;
-    color: #39367d; }
 
 .flex-logo {
   background-color: #EDEDED;
@@ -71,7 +66,7 @@ html body {
   color: #232323; }
   .flex-logo .RSCA {
     font-size: 2.5em;
-    font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif;
+    font-family: "Rock Salt";
     font-weight: bold;
     color: #39367d; }
 
@@ -80,7 +75,7 @@ html body {
   max-height: 150px; }
 
 .site-title {
-  font-family: "Raleway", "Merriweather", "Alegreya", sans-serif;
+  font-family: "Raleway", "Merriweather", sans-serif;
   text-align: center;
   padding-left: 50px;
   padding-right: 50px; }
@@ -97,7 +92,7 @@ html body {
   padding-top: 10px;
   padding-bottom: 10px; }
   .flex-menu .flex-menu-nav {
-    font-family: "Raleway", "Merriweather", "Alegreya", sans-serif;
+    font-family: "Raleway", "Merriweather", sans-serif;
     position: absolute; }
   .flex-menu .nav-bar {
     display: flex;
@@ -150,7 +145,7 @@ html body {
   padding-bottom: 10px; }
 
 .flex-menu-title {
-  font-family: "Raleway", "Merriweather", "Alegreya", sans-serif;
+  font-family: "Raleway", "Merriweather", sans-serif;
   margin-right: auto;
   padding-left: 20px; }
 
@@ -219,9 +214,13 @@ html body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center; }
-    .flex-thumbnail .textonimage-container .textonimage {
-      font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif;
+    align-items: center;
+    border-width: 70%;
+    border: 0;
+    border-top: 3px solid;
+    border-color: #EF8354; }
+    .flex-thumbnail .textonimage-container .textonimage-title {
+      font-family: "Rock Salt";
       color: #EDEDED;
       font-size: 1.5em;
       font-weight: bold; }
@@ -236,7 +235,7 @@ html body {
   align-items: center;
   position: absolute; }
   .flex-index .indexTitle {
-    font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif;
+    font-family: "Roboto Slab", "Montserrat", sans-serif;
     font-size: 5vw;
     font-weight: bold;
     color: #ff9f7c;
@@ -272,7 +271,7 @@ html body {
   .newsSlide .newsContent {
     color: #EDEDED; }
   .newsSlide .newsTitle {
-    font: "Raleway", "Merriweather", "Alegreya", sans-serif; }
+    font: "Raleway", "Merriweather", sans-serif; }
 
 .grid-footer {
   grid-area: grid-footer;
@@ -293,7 +292,7 @@ html body {
     margin: 0px;
     font-size: 1vw;
     background: #262626;
-    font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif; }
+    font-family: "Roboto Slab", "Montserrat", sans-serif; }
 
   .container-main {
     font-size: 2vh;
@@ -344,7 +343,7 @@ html body {
     padding-top: 10px;
     padding-bottom: 10px; }
     .flex-menu-sm .flex-menu-nav {
-      font-family: "Raleway", "Merriweather", "Alegreya", sans-serif; }
+      font-family: "Raleway", "Merriweather", sans-serif; }
     .flex-menu-sm nav ul {
       display: flex;
       flex-direction: column;
@@ -384,12 +383,12 @@ html body {
       display: none; }
 
   .site-title-sm {
-    font-family: "Raleway", "Merriweather", "Alegreya", sans-serif;
+    font-family: "Raleway", "Merriweather", sans-serif;
     position: absolute;
     text-align: center; }
 
   .flex-menu-title {
-    font-family: "Raleway", "Merriweather", "Alegreya", sans-serif; }
+    font-family: "Raleway", "Merriweather", sans-serif; }
 
   .flex-logo-sm {
     background-color: #EDEDED;
@@ -403,7 +402,7 @@ html body {
     color: #232323; }
     .flex-logo-sm .RSCA {
       font-size: 2.5em;
-      font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif;
+      font-family: "Roboto Slab", "Montserrat", sans-serif;
       font-weight: bold;
       color: #39367d; }
 
@@ -419,7 +418,7 @@ html body {
     color: #232323; }
     .flex-logo .RSCA {
       font-size: 2.5em;
-      font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif;
+      font-family: "Roboto Slab", "Montserrat", sans-serif;
       font-weight: bold;
       color: #39367d; }
 
@@ -428,7 +427,7 @@ html body {
     max-height: 150px; }
 
   .site-title {
-    font-family: "Raleway", "Merriweather", "Alegreya", sans-serif;
+    font-family: "Raleway", "Merriweather", sans-serif;
     text-align: center;
     padding-left: 50px;
     padding-right: 50px; }
@@ -494,7 +493,7 @@ html body {
       justify-content: center;
       align-items: center; }
       .flex-thumbnail .textonimage-container .textonimage {
-        font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif;
+        font-family: "Roboto Slab", "Montserrat", sans-serif;
         color: #EDEDED;
         font-size: 1.5em;
         font-weight: bold; }
@@ -508,7 +507,7 @@ html body {
     align-items: center;
     position: absolute; }
     .flex-index .indexTitle {
-      font-family: "Roboto Slab", "Montserrat", "Lato", sans-serif;
+      font-family: "Roboto Slab", "Montserrat", sans-serif;
       font-size: 5vw;
       font-weight: bold;
       color: #ff9f7c;
@@ -544,7 +543,7 @@ html body {
     .newsSlide .newsContent {
       color: #EDEDED; }
     .newsSlide .newsTitle {
-      font: "Raleway", "Merriweather", "Alegreya", sans-serif; }
+      font: "Raleway", "Merriweather", sans-serif; }
 
   .grid-footer {
     grid-area: grid-footer;

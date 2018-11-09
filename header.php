@@ -54,17 +54,6 @@ RSCA
 
 
 
-<?php
-$current = pll_current_language(); 
-$siteurl = get_site_url();
-if ( $current == 'fr'){
-$fr = '/fr/blogfr';
-$news_fr = $siteurl.$fr;
-
-}
-
- ?>
-
 
 
 

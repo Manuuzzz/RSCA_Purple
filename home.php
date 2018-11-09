@@ -26,12 +26,18 @@ echo '<div class="flex-news-container">';
 if ($query ->have_posts() ) : while ( $query ->have_posts() ) : $query ->the_post(); 
 if(  has_post_thumbnail()) :
  echo '<div class="zoom-container">';
+
    echo '<div class="flex-thumbnail">';
     the_post_thumbnail();
+ 
     echo '<div class="textonimage-container">';
-   echo '<div class="textonimage">';
+      echo '<div class="textonimage-title">';
+    
     the_title(); 
-    echo '</div></div></div></div>';
+
+    echo '</div></div>';
+    
+    echo '</div></div>';
   endif;
 endwhile; 
 endif; 

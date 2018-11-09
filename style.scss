@@ -12,7 +12,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Alegreya+Sans|Lato|Merriweather+Sans|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Merriweather+Sans|Montserrat|Rock+Salt');
 
 
 $purple_primary: #39367d;
@@ -22,9 +22,9 @@ $salmon_3: #fbb0a1;
 $font-dark: #232323;
 $dark:#262626;
 $lightgray: #EDEDED;
-$font-stack-title:'Raleway','Merriweather','Alegreya',sans-serif;
-$font-stack-content:'Roboto Slab','Montserrat','Lato',sans-serif;
-
+$font-stack-title:'Raleway','Merriweather',sans-serif;
+$font-stack-content:'Roboto Slab','Montserrat',sans-serif;
+$font-paint: 'Rock Salt';
 
 
 
@@ -92,12 +92,7 @@ $font-stack-content:'Roboto Slab','Montserrat','Lato',sans-serif;
         padding-top: 10px;
         padding-bottom: 10px;
         color: $font-dark;
-        .RSCA {
-        font-size: 2.5em;
-        font-family: $font-stack-content;
-        font-weight: bold;
-        color: $purple_primary;
-            }}
+      }
     
     .flex-logo {
     
@@ -112,7 +107,7 @@ $font-stack-content:'Roboto Slab','Montserrat','Lato',sans-serif;
     color: $font-dark;
     .RSCA {
     font-size: 2.5em;
-    font-family: $font-stack-content;
+    font-family: $font-paint;
     font-weight: bold;
     color: $purple_primary;
         }
@@ -317,12 +312,10 @@ transform: scale(1.1);
 }
 
 
-
-
 .textonimage-container {
 position: absolute;
 top: 440px;
-background: rgba(57, 54, 125, 0.9);;
+background: rgba(57, 54, 125, 0.9);
 left: 0px;
 margin: 0;
 //width: 960px;
@@ -332,14 +325,20 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
+border-width: 70%;
+border: 0;
+border-top: 3px solid;
+border-color: $salmon_1;
 
-.textonimage {
-    font-family: $font-stack-content;
+.textonimage-title {
+    font-family: $font-paint;
     color: $lightgray;
     font-size: 1.5em;
     font-weight: bold;
 
 }
+
+
 }}
 
 
