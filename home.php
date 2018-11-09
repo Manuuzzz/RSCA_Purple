@@ -21,11 +21,11 @@ $args = array( 'category_name' => 'newsen','lang' => 'en');}
 $query = new WP_Query( $args ); 
 $count = $query->post_count;
 
-
+echo '<div class="flex-news-container">';
 if ($query ->have_posts() ) : while ( $query ->have_posts() ) : $query ->the_post(); 
 
 
-echo '<div class="flex-news-container">';
+
 
 if(  has_post_thumbnail()) :
     echo '<div class="zoom-container">';
@@ -38,9 +38,10 @@ if(  has_post_thumbnail()) :
 
 endif;
 
-echo '</div>';
+
 endwhile; 
 endif; 
+echo '</div>';
 wp_reset_postdata();
 
 ?>

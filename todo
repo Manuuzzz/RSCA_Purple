@@ -23,7 +23,11 @@ footer: social media icons / footy icons
 hoover effects on text
 
 remove unnec fonts
-
+Favicon
+Fotos
+Evenementen
+Contact
+Set theme picture
 
 layout: logo vanboven centered
 then menu below: centered
@@ -49,3 +53,51 @@ add in menu links:
 <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'container_class' => 'languagemenu' ) ); ?>
 
 change site title front page with text in editor
+
+change link for news in menu to url/categories/news
+
+
+home.php
+
+<main>
+
+
+<?php
+
+$current = pll_current_language(); 
+
+if ( $current == 'nl'){
+$args = array( 'category_name' => 'news','lang' => 'nl');}
+if ( $current == 'fr'){
+$args = array( 'category_name' => 'newsfr','lang' => 'fr');}
+if ( $current == 'en'){
+$args = array( 'category_name' => 'newsen','lang' => 'en');}
+$query = new WP_Query( $args ); 
+$count = $query->post_count;
+
+
+if ($query ->have_posts() ) : while ( $query ->have_posts() ) : $query ->the_post(); 
+
+
+echo '<div class="flex-news-container">';
+
+if(  has_post_thumbnail()) :
+    echo '<div class="zoom-container">';
+   echo '<div class="flex-thumbnail">';
+    the_post_thumbnail();
+    echo '<div class="textonimage-container">';
+   echo '<div class="textonimage">';
+    the_title(); 
+    echo '</div></div></div></div>';
+
+endif;
+
+echo '</div>';
+endwhile; 
+endif; 
+wp_reset_postdata();
+
+?>
+
+
+</main>
