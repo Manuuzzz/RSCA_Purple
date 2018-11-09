@@ -19,31 +19,25 @@ $args = array( 'category_name' => 'newsfr','lang' => 'fr');}
 if ( $current == 'en'){
 $args = array( 'category_name' => 'newsen','lang' => 'en');}
 $query = new WP_Query( $args ); 
-$count = $query->post_count;
+
+
 
 echo '<div class="flex-news-container">';
 if ($query ->have_posts() ) : while ( $query ->have_posts() ) : $query ->the_post(); 
-
-
-
-
 if(  has_post_thumbnail()) :
-    echo '<div class="zoom-container">';
+ echo '<div class="zoom-container">';
    echo '<div class="flex-thumbnail">';
     the_post_thumbnail();
     echo '<div class="textonimage-container">';
    echo '<div class="textonimage">';
     the_title(); 
     echo '</div></div></div></div>';
-
-endif;
-
-
+  endif;
 endwhile; 
 endif; 
 echo '</div>';
-wp_reset_postdata();
 
+wp_reset_postdata();
 ?>
 
 
