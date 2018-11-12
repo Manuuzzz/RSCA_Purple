@@ -16,12 +16,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 $purple_primary: #39367d;
+$purple_dark: #001150;
+$purple_light: #6860ad;
+
 $salmon_1: #EF8354;
 $salmon_2: #ff9f7c;
 $salmon_3: #fbb0a1;
+$salmon_dark: #b85429;
+$salmon_light: #ffb482;
 $font-dark: #232323;
 $dark:#262626;
 $lightgray: #EDEDED;
+$offwhite: #fafafa;
 $font-stack-title:'Raleway','Merriweather',sans-serif;
 $font-stack-content:'Roboto Slab','Montserrat',sans-serif;
 $font-paint: 'Rock Salt';
@@ -250,7 +256,7 @@ padding-bottom: 10px;
     grid-area: grid-content;
     padding: 0;
     margin: 0; 
-    background: $lightgray;
+    background: $offwhite;
     
     }
 
@@ -268,7 +274,7 @@ padding-bottom: 10px;
 .flex-news-container {
 display: flex;
 flex-direction: row;
-background: $lightgray;
+background: $offwhite;
 width: 100%;
 margin-left: auto;
 margin-right: auto;
@@ -283,12 +289,17 @@ padding-top: 20px;
 padding-bottom: 20px;
 }
 
+.zoom-container:hover {
+
+background-color: $salmon_light;
+}
+
 .flex-thumbnail {
 background: $lightgray;
 position: relative;
 //width: 960px; //aspect ratio 16:9
 //height: 540px;
-width: 48vw;
+width: 30vw;
 height: 540px;
 overflow: hidden;
 
@@ -312,34 +323,7 @@ transform: scale(1.1);
 }
 
 
-.textonimage-container {
-position: absolute;
-top: 440px;
-background: rgba(57, 54, 125, 0.9);
-left: 0px;
-margin: 0;
-//width: 960px;
-width: 100%;
-height: 100px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-border-width: 70%;
-border: 0;
-border-top: 3px solid;
-border-color: $salmon_1;
-
-.textonimage-title {
-    font-family: $font-paint;
-    color: $lightgray;
-    font-size: 1.5em;
-    font-weight: bold;
-
 }
-
-
-}}
 
 
 
