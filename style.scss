@@ -28,6 +28,7 @@ $font-dark: #232323;
 $dark:#262626;
 $lightgray: #EDEDED;
 $offwhite: #fafafa;
+$fluo_salmon: #ffb482;
 $font-stack-title:'Raleway','Merriweather',sans-serif;
 $font-stack-content:'Roboto Slab','Montserrat',sans-serif;
 $font-paint: 'Rock Salt';
@@ -294,16 +295,23 @@ justify-content: space-around;
 align-items: center;
 flex-wrap: wrap;
 
+a {
+    text-decoration: none;
+    color: $purple_primary;
+   
+  
+    } 
+    a:hover {
+        color: $salmon_1;
+        }
 }
 
 .zoom-container {
 padding-top: 20px;
 padding-bottom: 20px;
-}
+width: 405px;
+margin-top: 20px;
 
-.zoom-container:hover {
-
-background-color: $salmon_light;
 }
 
 .flex-thumbnail {
@@ -311,8 +319,9 @@ background: $lightgray;
 position: relative;
 //width: 960px; //aspect ratio 16:9
 //height: 540px;
-width: 30vw;
-height: 540px;
+//width: 20vw;
+height: 270px;
+width: 405px;
 overflow: hidden;
 
 
@@ -321,11 +330,11 @@ img {
     //height: 540px;
 object-fit: cover;
 width: 100%;
-height: 540px;
+height:270px;
 -webkit-transition: all 200ms ease-in;
 -ms-transition: all 200ms ease-in;
 -moz-transition: all 200ms ease-in;
-transition: all 200ms ease-in;
+transition: all 100ms ease-in;
 }
 img:hover {
 -webkit-transform: scale(1.1); 
@@ -337,9 +346,56 @@ transform: scale(1.1);
 
 }
 
+.flex-thumbnail-date {
+font-family: $font-stack-title;
+padding: 0px;
 
 
 
+h3 {
+
+    padding: 0px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 00px;
+    span {
+    background-color: $purple_primary;
+    color: $offwhite;
+    padding: 4px;
+}}
+}
+
+.flex-thumbnail-title {
+    font-family: $font-stack-title;
+    padding: 0px;
+    
+    
+    
+    h3 {
+    
+        padding: 0px;
+        padding-top: 10px;
+        margin-top: 4px;
+        margin-bottom: 0px;
+        span {
+        
+        color: $font-dark;
+        padding: 4px;
+    }}
+    }
+
+    .flex-thumbnail-content {
+        font-family: $font-stack-title;
+padding: 0px;
+            padding-top: 10px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color: $font-dark;
+            
+      p {
+
+        margin-top: 4px;
+        }}
 
 .flex-index {
 color: $lightgray;
@@ -752,7 +808,14 @@ opacity: 0.8;
     }
     }}
     
-    
+.flex-thumbnail-title {
+
+
+    font-family: $font-stack-title;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: red;
+}
 
 .flex-index {
 color: $lightgray;
