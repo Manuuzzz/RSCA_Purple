@@ -121,24 +121,9 @@ $font-paint: 'Rock Salt';
     
     }
 
-    .flex-menu-line {
-        
-        background: url(./images/menu_line.svg);  
-        height: 60px;
-        width: 100%;
-        top: 0%;
-    
-        background-size: auto 60px;
-  object-fit: contain;
-  background-repeat: no-repeat;
-        position: relative;
-      
-      
-       
-        
-        
 
-    }
+
+
 
     .logo {
     
@@ -161,7 +146,7 @@ $font-paint: 'Rock Salt';
 
     
     .flex-menu {
-    background-color: $dark;
+    background-color: $purple_dark;
     color: $lightgray;
     display: flex;
     flex-direction: row;
@@ -169,8 +154,8 @@ $font-paint: 'Rock Salt';
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+ 
     
     .flex-menu-nav {
         font-family: $font-stack-title;
@@ -262,6 +247,7 @@ padding-bottom: 10px;
     
     .flex-menu-title {
     font-family: $font-stack-title;
+    font-size: 2vw;
     margin-right: auto;
     padding-left: 20px;
      

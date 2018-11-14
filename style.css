@@ -71,16 +71,6 @@ html body {
     font-weight: bold;
     color: #39367d; }
 
-.flex-menu-line {
-  background: url(./images/menu_line.svg);
-  height: 60px;
-  width: 100%;
-  top: 0%;
-  background-size: auto 60px;
-  object-fit: contain;
-  background-repeat: no-repeat;
-  position: relative; }
-
 .logo img {
   max-width: 150px;
   max-height: 150px; }
@@ -92,7 +82,7 @@ html body {
   padding-right: 50px; }
 
 .flex-menu {
-  background-color: #262626;
+  background-color: #001150;
   color: #EDEDED;
   display: flex;
   flex-direction: row;
@@ -100,8 +90,7 @@ html body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  padding: 10px; }
   .flex-menu .flex-menu-nav {
     font-family: "Raleway", "Merriweather", sans-serif;
     position: absolute; }
@@ -157,6 +146,7 @@ html body {
 
 .flex-menu-title {
   font-family: "Raleway", "Merriweather", sans-serif;
+  font-size: 2vw;
   margin-right: auto;
   padding-left: 20px; }
 

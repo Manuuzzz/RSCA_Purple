@@ -52,11 +52,6 @@ RSCA
 </div>
 </div>  <!-- end flex-logo -->
 
-<div class="flex-menu-line">
- 
-</div>
-
-
 
 
 <div class="flex-menu"> <!-- this is visible in normal screens -->
@@ -76,6 +71,7 @@ $args = array(
 </div><!-- end flex-menu-nav -->
 
 </div><!-- end flex-menu -->
+
 </header>
 </div> <!-- end grid-menu -->
 

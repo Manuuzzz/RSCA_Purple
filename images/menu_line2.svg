@@ -10,12 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="3840"
-   height="20"
-   viewBox="0 0 3840 20"
+   height="40"
+   viewBox="0 0 3840 40"
    version="1.1"
    id="SVGRoot"
    inkscape:version="0.92.1 r15371"
-   sodipodi:docname="menu_line.svg">
+   sodipodi:docname="menu_line2.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.53333333"
-     inkscape:cx="2861.9268"
-     inkscape:cy="404.45739"
+     inkscape:zoom="0.75424723"
+     inkscape:cx="271.46815"
+     inkscape:cy="108.95418"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -35,31 +35,13 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:showpageshadow="false"
-     showborder="false"
-     showguides="true"
-     inkscape:guide-bbox="true">
+     showborder="false">
     <inkscape:grid
        type="xygrid"
        id="grid5052" />
-    <sodipodi:guide
-       position="1880,320"
-       orientation="1,0"
-       id="guide5044"
-       inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
-     id="defs4493">
-    <inkscape:path-effect
-       effect="simplify"
-       id="path-effect5042"
-       is_visible="true"
-       steps="1"
-       threshold="0.002"
-       smooth_angles="0"
-       helper_size="5"
-       simplify_individual_paths="false"
-       simplify_just_coalesce="false" />
-  </defs>
+     id="defs4493" />
   <metadata
      id="metadata4496">
     <rdf:RDF>
@@ -75,20 +57,19 @@
   <g
      id="layer1"
      inkscape:groupmode="layer"
-     inkscape:label="Laag 1">
+     inkscape:label="Laag 1"
+     transform="translate(0,20)">
     <rect
        style="opacity:1;fill:#262626;fill-opacity:1;stroke:#262626;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect5060"
+       id="rect4485"
        width="3840"
-       height="20"
+       height="40"
        x="0"
-       y="0"
-       ry="0" />
+       y="-20" />
     <path
        style="fill:#fafafa;stroke:#fafafa;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="M 0,0 C 0,0 1715.0758,0 1880,0 2060,0 3360,60 3840,0 4320,-60 0,0 0,0 Z"
-       id="path5050"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cssc" />
+       d="M 0,20 3840,-20 V 20 Z"
+       id="path4489"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
