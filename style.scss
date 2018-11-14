@@ -103,6 +103,7 @@ $font-paint: 'Rock Salt';
     .flex-logo {
     
     background-color: $lightgray;
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -119,6 +120,26 @@ $font-paint: 'Rock Salt';
         }
     
     }
+
+    .flex-menu-line {
+        
+        background: url(./images/menu_line.svg);  
+        height: 60px;
+        width: 100%;
+        top: 0%;
+    
+        background-size: auto 60px;
+  object-fit: contain;
+  background-repeat: no-repeat;
+        position: relative;
+      
+      
+       
+        
+        
+
+    }
+
     .logo {
     
     img {
@@ -136,6 +157,8 @@ $font-paint: 'Rock Salt';
     
     
     }
+
+
     
     .flex-menu {
     background-color: $dark;
@@ -219,6 +242,9 @@ $font-paint: 'Rock Salt';
 
     }}
     }
+
+    
+    
 
 .flex-menu-sm {
 background-color: $dark;
