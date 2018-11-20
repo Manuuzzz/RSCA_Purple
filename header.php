@@ -13,7 +13,7 @@
     <title><?php bloginfo('name'); ?></title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-   
+    <script src="<?php bloginfo('template_directory'); ?>/scripts/front.js"></script>
     <?php wp_head(); ?>
 
 
@@ -26,14 +26,16 @@
 
 <div class="flex-logo-sm"><!-- this is visible in small screens -->
 <div class="logo"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="RSCA Logo"></div>
-</div>
+<div class="RSCA">
+RSCA
+</div></div>
 
 <div class="flex-menu-sm"><!-- this is visible in small screens -->
-<div class="site-title-sm colorsalmon1"><?php bloginfo('name'); ?></div>
-<div class="flex-menu-sm-icons colorsalmon1"><a href="#"><i class="fas fa-bars"></i></a></div>
-<div class="flex-menu-sm-listed">test</div>
-</div>
+<div class="flex-menu-title-sm"><span class="colorsalmon2">64</span> Les Géiants d'Ath</div>
+<div class="flex-menu-sm-icons colorsalmon1" onclick="toggleMenu()"><a href="#"><i class="fas fa-bars"></i></a></div>
 
+</div>
+<div id="flex-menu-sm-listed">test</div>
 
 
 

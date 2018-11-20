@@ -24,14 +24,17 @@
 <div class="grid-menu">
 <header>
 
+
 <div class="flex-logo-sm"><!-- this is visible in small screens -->
 <div class="logo"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="RSCA Logo"></div>
-</div>
+<div class="RSCA">
+RSCA
+</div></div>
 
 <div class="flex-menu-sm"><!-- this is visible in small screens -->
-<div class="site-title-sm colorsalmon1"><?php bloginfo('name'); ?></div>
+<div class="flex-menu-title-sm"><span class="colorsalmon2">64</span> Les Géiants d'Ath</div>
 <div class="flex-menu-sm-icons colorsalmon1"><a href="#"><i class="fas fa-bars"></i></a></div>
-<div class="flex-menu-sm-listed">test</div>
+<div id="flex-menu-sm-listed">test</div>
 </div>
 
 
@@ -54,16 +57,7 @@ RSCA
 
 
 
-<?php
-$current = pll_current_language(); 
-$siteurl = get_site_url();
-if ( $current == 'fr'){
-$fr = '/fr/blogfr';
-$news_fr = $siteurl.$fr;
 
-}
-
- ?>
 
 
 
