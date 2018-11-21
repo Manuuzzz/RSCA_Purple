@@ -9,3 +9,9 @@ if (menu.style.display === "flex") {
     else menu.style.display = "flex";
 
 }
+
+function hideMenu() {
+    let menu = document.getElementById("flex-menu-sm-listed");
+    menu.style.display = "none";
+
+}

@@ -30,14 +30,25 @@
 RSCA
 </div></div>
 
+<div class="flex-menuy-sm-container">
 <div class="flex-menu-sm"><!-- this is visible in small screens -->
 <div class="flex-menu-title-sm"><span class="colorsalmon2">64</span> Les Géiants d'Ath</div>
 <div class="flex-menu-sm-icons colorsalmon1" onclick="toggleMenu()"><a href="#"><i class="fas fa-bars"></i></a></div>
-
 </div>
-<div id="flex-menu-sm-listed">test</div>
 
+<div id="flex-menu-sm-listed">
+<nav class="nav-bar-sm">
+<?php
+$args = array(
+    'theme_location' => 'primary'
+);
+?>
 
+<?php wp_nav_menu($args); ?>
+<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'container_class' => 'languagemenu' ) ); ?>
+</nav>
+</div>
+</div>
 
 
 
@@ -78,5 +89,5 @@ $args = array(
 </div> <!-- end grid-menu -->
 
 </head>
-<body>
+<body onresize="hideMenu()">
 

@@ -163,6 +163,8 @@ $font-paint: 'Rock Salt';
         position: absolute;
       
     }
+
+
         
     .nav-bar {
         display: flex;
@@ -230,7 +232,10 @@ $font-paint: 'Rock Salt';
     }
 
     
+.flex-menu-sm-container {
+ display: none;   
     
+}
 
 .flex-menu-sm {
 background-color: $dark;
@@ -254,7 +259,11 @@ padding-bottom: 10px;
      
     
     }
-    
+
+    #flex-menu-sm-listed {
+display: none;
+
+    }
     .colorsalmon2 {
     color: $salmon_2;
     }
@@ -292,7 +301,7 @@ width: 100%;
 margin-left: auto;
 margin-right: auto;
 justify-content: space-around;
-align-items: center;
+align-items: flex-start;
 flex-wrap: wrap;
 
 a {
@@ -634,8 +643,14 @@ padding: 10px;
     position: absolute;
   
 }
-    
+
 .nav-bar {
+
+display: none;
+
+}
+    
+.nav-bar-sm {
     display: flex;
     flex-direction: row;
 

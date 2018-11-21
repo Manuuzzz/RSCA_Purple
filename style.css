@@ -132,6 +132,9 @@ html body {
         .flex-menu .languagemenu ul li a:hover {
           color: #EF8354; }
 
+.flex-menu-sm-container {
+  display: none; }
+
 .flex-menu-sm {
   background-color: #262626;
   color: #EDEDED;
@@ -149,6 +152,9 @@ html body {
   font-size: 2vw;
   margin-right: auto;
   padding-left: 20px; }
+
+#flex-menu-sm-listed {
+  display: none; }
 
 .colorsalmon2 {
   color: #ff9f7c; }
@@ -178,7 +184,7 @@ html body {
   margin-left: auto;
   margin-right: auto;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap; }
   .flex-news-container a {
     text-decoration: none;
@@ -398,23 +404,25 @@ html body {
       font-family: "Raleway", "Merriweather", sans-serif;
       position: absolute; }
     .flex-menu .nav-bar {
+      display: none; }
+    .flex-menu .nav-bar-sm {
       display: flex;
       flex-direction: row; }
-      .flex-menu .nav-bar ul {
+      .flex-menu .nav-bar-sm ul {
         display: flex;
         flex-direction: row;
         list-style: none;
         justify-content: center;
         margin: 0px;
         padding-left: 0px; }
-        .flex-menu .nav-bar ul li {
+        .flex-menu .nav-bar-sm ul li {
           display: list-item;
           margin: 0px;
           padding-right: 20px; }
-          .flex-menu .nav-bar ul li a {
+          .flex-menu .nav-bar-sm ul li a {
             text-decoration: none;
             color: #EDEDED; }
-          .flex-menu .nav-bar ul li a:hover {
+          .flex-menu .nav-bar-sm ul li a:hover {
             color: #EF8354; }
     .flex-menu .languagemenu {
       height: 30px; }
