@@ -107,29 +107,12 @@ html body {
       .flex-menu .nav-bar ul li {
         display: list-item;
         margin: 0px;
-        padding-right: 20px; }
+        padding-right: 20px;
+        font-size: 1.5em; }
         .flex-menu .nav-bar ul li a {
           text-decoration: none;
           color: #EDEDED; }
         .flex-menu .nav-bar ul li a:hover {
-          color: #EF8354; }
-  .flex-menu .languagemenu {
-    height: 30px; }
-    .flex-menu .languagemenu ul {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      justify-content: center;
-      margin: 0px;
-      padding-left: 0px; }
-      .flex-menu .languagemenu ul li {
-        display: list-item;
-        margin: 0px;
-        padding-right: 20px; }
-        .flex-menu .languagemenu ul li a {
-          text-decoration: none;
-          color: #EDEDED; }
-        .flex-menu .languagemenu ul li a:hover {
           color: #EF8354; }
 
 .flex-menu-sm-container {
@@ -149,11 +132,12 @@ html body {
 
 .flex-menu-title {
   font-family: "Raleway", "Merriweather", sans-serif;
-  font-size: 2vw;
+  font-size: 2em;
   margin-right: auto;
   padding-left: 20px; }
 
 #flex-menu-sm-listed {
+  font-family: "Raleway", "Merriweather", sans-serif;
   display: none; }
 
 .colorsalmon2 {
@@ -424,24 +408,10 @@ html body {
             color: #EDEDED; }
           .flex-menu .nav-bar-sm ul li a:hover {
             color: #EF8354; }
-    .flex-menu .languagemenu {
-      height: 30px; }
-      .flex-menu .languagemenu ul {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: center;
-        margin: 0px;
-        padding-left: 0px; }
-        .flex-menu .languagemenu ul li {
-          display: list-item;
-          margin: 0px;
-          padding-right: 20px; }
-          .flex-menu .languagemenu ul li a {
-            text-decoration: none;
-            color: #EDEDED; }
-          .flex-menu .languagemenu ul li a:hover {
-            color: #EF8354; }
+
+  .flex-menu-sm-container {
+    display: flex;
+    flex-direction: column; }
 
   .flex-menu-sm {
     background-color: #001150;
@@ -476,6 +446,52 @@ html body {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px; }
+    #flex-menu-sm-listed .nav-bar-sm {
+      display: flex;
+      flex-direction: row; }
+      #flex-menu-sm-listed .nav-bar-sm .menu-menu1-container ul#menu-menu1 {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: center;
+        margin: 0px;
+        padding-left: 0px; }
+        #flex-menu-sm-listed .nav-bar-sm .menu-menu1-container ul#menu-menu1 li {
+          display: list-item;
+          margin: 0px;
+          padding-bottom: 20px;
+          font-size: 1.5em; }
+          #flex-menu-sm-listed .nav-bar-sm .menu-menu1-container ul#menu-menu1 li a {
+            text-decoration: none;
+            color: #EDEDED; }
+          #flex-menu-sm-listed .nav-bar-sm .menu-menu1-container ul#menu-menu1 li a:hover {
+            color: #EF8354; }
+
+  .menu-menulanguage-container {
+    background-color: #39367d;
+    color: #EDEDED;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .menu-menulanguage-container ul#menu-menulanguage {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      justify-content: center;
+      margin: 0px;
+      padding-left: 0px; }
+      .menu-menulanguage-container ul#menu-menulanguage li {
+        display: list-item;
+        margin: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        padding-left: 10px; }
+        .menu-menulanguage-container ul#menu-menulanguage li a {
+          text-decoration: none;
+          color: #EDEDED; }
+        .menu-menulanguage-container ul#menu-menulanguage li a:hover {
+          color: #EF8354; }
 
   .flex-menu-title {
     font-family: "Raleway", "Merriweather", sans-serif;
@@ -485,7 +501,7 @@ html body {
 
   .flex-menu-title-sm {
     font-family: "Raleway", "Merriweather", sans-serif;
-    font-size: 2.5vh;
+    font-size: 3vh;
     margin-right: auto;
     padding-left: 20px; }
 

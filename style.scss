@@ -184,6 +184,7 @@ $font-paint: 'Rock Salt';
     display: list-item;
     margin: 0px;
     padding-right: 20px;
+    font-size: 1.5em;
     
     a {
         text-decoration: none;
@@ -197,38 +198,7 @@ $font-paint: 'Rock Salt';
     }
     
     }}
-    .languagemenu {
-
-        height: 30px;
-        
-        
-         ul {
-
-            display: flex;
-            flex-direction: row;
-            list-style: none;
-            justify-content: center;
-            margin: 0px;
-            padding-left: 0px;
-            
-                  
-            li {
-            display: list-item;
-            margin: 0px;
-            padding-right: 20px;
-            
-            a {
-                text-decoration: none;
-                color: $lightgray;
-            
-              
-                } 
-                a:hover {
-                    color: $salmon_1;
-                    }
-            }
-
-    }}
+    
     }
 
     
@@ -253,7 +223,7 @@ padding-bottom: 10px;
     
     .flex-menu-title {
     font-family: $font-stack-title;
-    font-size: 2vw;
+    font-size: 2em;
     margin-right: auto;
     padding-left: 20px;
      
@@ -261,9 +231,10 @@ padding-bottom: 10px;
     }
 
     #flex-menu-sm-listed {
+        font-family: $font-stack-title;
 display: none;
+}
 
-    }
     .colorsalmon2 {
     color: $salmon_2;
     }
@@ -681,42 +652,14 @@ a {
 }
 
 }}
-.languagemenu {
 
-    height: 30px;
-    
-    
-     ul {
-
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: center;
-        margin: 0px;
-        padding-left: 0px;
-        
-              
-        li {
-        display: list-item;
-        margin: 0px;
-        padding-right: 20px;
-        
-        a {
-            text-decoration: none;
-            color: $lightgray;
-        
-          
-            } 
-            a:hover {
-                color: $salmon_1;
-                }
-        }
-
-}}
 }
 
 
-
+.flex-menu-sm-container {
+    display: flex;   
+    flex-direction: column;
+   }
 
 .flex-menu-sm {
 background-color: $purple_dark;
@@ -761,7 +704,86 @@ align-items: center;
 margin: 0;
 padding-top: 10px;
 padding-bottom: 10px;
+
+
+
+.nav-bar-sm {
+    display: flex;
+    flex-direction: row;
+
+.menu-menu1-container {
+
+
+ul#menu-menu1 {
+
+display: flex;
+flex-direction: column;
+list-style: none;
+justify-content: center;
+margin: 0px;
+padding-left: 0px;
+
+      
+li {
+display: list-item;
+margin: 0px;
+padding-bottom: 20px;
+font-size: 1.5em;
+
+a {
+    text-decoration: none;
+    color: $lightgray;
+
+  
+    } 
+    a:hover {
+        color: $salmon_1;
+        }
+}}
+
+} 
+
+}
+
 }  
+
+.menu-menulanguage-container {
+
+    background-color: $purple_primary;
+    color: $lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul#menu-menulanguage {
+
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        margin: 0px;
+        padding-left: 0px;
+        
+              
+        li {
+        display: list-item;
+        margin: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        
+        a {
+            text-decoration: none;
+            color: $lightgray;
+        
+          
+            } 
+            a:hover {
+                color: $salmon_1;
+                }
+        }}
+
+}
 
 .flex-menu-title {
 font-family: $font-stack-title;
@@ -774,7 +796,7 @@ padding-left: 20px;
 
 .flex-menu-title-sm {
     font-family: $font-stack-title;
-    font-size: 2.5vh;
+    font-size: 3vh;
     margin-right: auto;
     padding-left: 20px;
      
