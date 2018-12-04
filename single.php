@@ -13,12 +13,15 @@
 <div class="grid-content">
 
 <main>
-<div class="flex-index">
+<div class="flex-index"> <!-- dit veranderen zodat vertical alignment verandert -->
 
 <?php
         // Start the loop.
-        while ( have_posts() ) : the_post();
- 
+        while ( have_posts() ) : the_post(); 
+
+        echo '<div class="single_title">';
+ the_title();
+ echo '</div>';
           the_content();
           echo 'test';
         // End the loop.

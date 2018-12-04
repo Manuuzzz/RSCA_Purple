@@ -253,6 +253,12 @@ html body {
     color: #ff9f7c;
     opacity: 0.8; }
 
+.single_title {
+  font-family: "Raleway", "Merriweather", sans-serif;
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: #232323; }
+
 .newsContainer {
   display: flex;
   flex-direction: row;
@@ -299,7 +305,7 @@ html body {
     color: #EDEDED;
     padding: 10px; }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   html body {
     margin: 0px;
     font-size: 1vw;

@@ -396,6 +396,16 @@ opacity: 0.8;
 }   
 }
     
+.single_title {
+
+
+    font-family: $font-stack-title;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: $font-dark;
+
+
+}
     
     .newsContainer {
     
@@ -476,7 +486,7 @@ opacity: 0.8;
 
     
 // default max width
-@media (max-width: 768px){
+@media (max-width: 1200px){
 
 html {
     body {
