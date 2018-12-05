@@ -77,7 +77,15 @@ RSCA
 </div>
 </div>  <!-- end flex-logo -->
 
+<div class="flex-menu-container">
 
+<?php
+$args = array(
+    'theme_location' => 'secondary'
+);
+?>
+
+<?php wp_nav_menu($args); ?>
 
 <div class="flex-menu"> <!-- this is visible in normal screens -->
 <div class="flex-menu-title"><span class="colorsalmon2">64</span> Les Géiants d'Ath</div>
@@ -96,6 +104,7 @@ $args = array(
 </div><!-- end flex-menu-nav -->
 
 </div><!-- end flex-menu -->
+</div>
 
 </header>
 </div> <!-- end grid-menu -->
