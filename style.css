@@ -283,7 +283,7 @@ html body {
     font-size: 5vw;
     font-weight: bold;
     color: #ff9f7c;
-    opacity: 0.8; }
+    opacity: 1; }
 
 .single_title {
   font-family: "Raleway", "Merriweather", sans-serif;
@@ -657,7 +657,7 @@ html body {
       font-size: 5vw;
       font-weight: bold;
       color: #ff9f7c;
-      opacity: 0.8; }
+      opacity: 1; }
 
   .newsContainer {
     display: flex;
