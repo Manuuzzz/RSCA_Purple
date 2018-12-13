@@ -425,12 +425,13 @@ padding: 0px;
 .flex-index {
 color: $lightgray;
 display: flex;
-flex-direction: column;
+flex-direction: row;
 width: 100%;
 height: 60%;
 justify-content: center;
-align-items: center;
-position: absolute;
+align-items: flex-start;
+
+
 
 .indexTitle {
 font-family: $font-stack-content;
@@ -438,19 +439,35 @@ font-size: 5vw;
 font-weight: bold;
 color: $salmon_2;
 opacity: 1;
-}   
-}
+
+} 
+
+.indexContent {
     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3%;
+       
 .single_title {
-
-
+  
+    align-self: center;
     font-family: $font-stack-title;
     font-size: 2.5vw;
     font-weight: bold;
     color: $font-dark;
+}
 
+.single_content {
+
+    font-family: $font-stack-content;
+ 
+  
+    color: $font-dark;
 
 }
+
+}}
     
     .newsContainer {
     
@@ -1004,26 +1021,52 @@ padding: 0px;
 
     margin-top: 4px;
     }}
-
-.flex-index {
-color: $lightgray;
-display: flex;
-flex-direction: column;
-width: 100%;
-height: 60%;
-justify-content: center;
-align-items: center;
-position: absolute;
-
-.indexTitle {
-font-family: $font-stack-content;
-font-size: 5vw;
-font-weight: bold;
-color: $salmon_2;
-opacity: 1;
-}   
-}
-
+    .flex-index {
+        color: $lightgray;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60%;
+        justify-content: center;
+        align-items: flex-start;
+        
+        
+        
+        .indexTitle {
+        font-family: $font-stack-content;
+        font-size: 5vw;
+        font-weight: bold;
+        color: $salmon_2;
+        opacity: 1;
+        
+        } 
+        
+        .indexContent {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 3%;
+               
+        .single_title {
+          
+            align-self: center;
+            font-family: $font-stack-title;
+            font-size: 2.5vw;
+            font-weight: bold;
+            color: $font-dark;
+        }
+        
+        .single_content {
+        
+            font-family: $font-stack-content;
+         
+          
+            color: $font-dark;
+        
+        }
+        
+        }}
 
 .newsContainer {
 

@@ -1,8 +1,4 @@
-<?php
-/*
-    Template Name: RSCA_Purple
-*/
-?>
+
 
 
 <?php get_header(); ?>
@@ -13,19 +9,23 @@
 <div class="grid-content">
 
 <main>
-<div class="flex-index"> <!-- dit veranderen zodat vertical alignment verandert -->
+<div class="flex-index">
 
 <?php
+ echo '<div class="indexContent">';
         // Start the loop.
         while ( have_posts() ) : the_post(); 
-
+       
         echo '<div class="single_title">';
  the_title();
  echo '</div>';
+ echo '<div class="single_content">';
           the_content();
-          echo 'test';
+          echo '</div>';
+          
         // End the loop.
         endwhile;
+        echo '</div>';
         ?>
 
 </div><!-- end flex-index -->

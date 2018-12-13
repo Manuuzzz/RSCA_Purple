@@ -272,24 +272,31 @@ html body {
 .flex-index {
   color: #EDEDED;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   height: 60%;
   justify-content: center;
-  align-items: center;
-  position: absolute; }
+  align-items: flex-start; }
   .flex-index .indexTitle {
     font-family: "Roboto Slab", "Montserrat", sans-serif;
     font-size: 5vw;
     font-weight: bold;
     color: #ff9f7c;
     opacity: 1; }
-
-.single_title {
-  font-family: "Raleway", "Merriweather", sans-serif;
-  font-size: 2.5vw;
-  font-weight: bold;
-  color: #232323; }
+  .flex-index .indexContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3%; }
+    .flex-index .indexContent .single_title {
+      align-self: center;
+      font-family: "Raleway", "Merriweather", sans-serif;
+      font-size: 2.5vw;
+      font-weight: bold;
+      color: #232323; }
+    .flex-index .indexContent .single_content {
+      font-family: "Roboto Slab", "Montserrat", sans-serif;
+      color: #232323; }
 
 .newsContainer {
   display: flex;
@@ -646,18 +653,31 @@ html body {
   .flex-index {
     color: #EDEDED;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     height: 60%;
     justify-content: center;
-    align-items: center;
-    position: absolute; }
+    align-items: flex-start; }
     .flex-index .indexTitle {
       font-family: "Roboto Slab", "Montserrat", sans-serif;
       font-size: 5vw;
       font-weight: bold;
       color: #ff9f7c;
       opacity: 1; }
+    .flex-index .indexContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 3%; }
+      .flex-index .indexContent .single_title {
+        align-self: center;
+        font-family: "Raleway", "Merriweather", sans-serif;
+        font-size: 2.5vw;
+        font-weight: bold;
+        color: #232323; }
+      .flex-index .indexContent .single_content {
+        font-family: "Roboto Slab", "Montserrat", sans-serif;
+        color: #232323; }
 
   .newsContainer {
     display: flex;
