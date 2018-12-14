@@ -3,7 +3,10 @@
 
 <div class="sponsorContainer">
 
-<div class="icons"><i class="fab fa-facebook-f fa-2x"></i></div>
+<div class="icons">
+
+
+<img id="sponsorImage" width="50px" height="50px">
 </div>
 
 </div><!-- end class container -->

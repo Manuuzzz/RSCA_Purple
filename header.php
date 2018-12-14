@@ -110,5 +110,5 @@ $args = array(
 </div> <!-- end grid-menu -->
 
 </head>
-<body onresize="hideMenu()">
+<body onload="tester()" onresize="hideMenu()">
 
