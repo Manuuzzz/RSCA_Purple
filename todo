@@ -33,9 +33,10 @@ single php: embed Fotos
 footer: layout not ok with much text
 over ons
 text donkerder maken ok
-vals logo sponsors onload toevoegen aan frontpage
+vals logo sponsors onload toevoegen aan frontpage   
 max posts readings ok
 new pagina layout ok
 foto comprimeren
 favicon
 fontawesome locally
+change first sponsor image to be fixed in footer.php, then inteval

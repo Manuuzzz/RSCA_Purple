@@ -1,3 +1,9 @@
+
+sponsorImagesArray = new Array();
+sponsorImagesArray[0] = new Image();
+sponsorImagesArray[1] = new Image();
+let x = 0;
+
 function toggleMenu() {
 
     let menu = document.getElementById("flex-menu-sm-listed");
@@ -17,18 +23,30 @@ function hideMenu() {
 }
 
 
-function tester(){
+function refreshSponsorImages(){
 
-let templateUrl = object_name.templateUrl;
-
-let sponsorImagesArray = new Array();
-sponsorImagesArray[0] = new Image();
-
+templateUrl = object_name.templateUrl;
 sponsorImagesArray[0].src= templateUrl + "/images/bjjbelt.jpg"
+sponsorImagesArray[1].src= templateUrl + "/images/bjjbelt2.jpg"
+element = document.getElementById("sponsorImage");
 
-let element = document.getElementById("sponsorImage");
+setInterval(changeImage, 5000);
+    
+ }
 
 
-element.src = sponsorImagesArray[0].src;
+
+function changeImage() {
+
+
+element.src = sponsorImagesArray[x].src; 
+
+x = x + 1;
+   
+if (x > sponsorImagesArray.length-1)   {
+x = 0;
+}
 
 }
+
+  

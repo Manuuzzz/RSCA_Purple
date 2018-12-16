@@ -114,7 +114,7 @@ $args = array(
 
 </head>
 
-<body onresize="hideMenu()">
+<body onload="refreshSponsorImages()" onresize="hideMenu()">
 
 
 
