@@ -20,6 +20,8 @@
  the_title();
  echo '</div>';
  echo '<div class="single_content">';
+
+ the_post_thumbnail();
           the_content();
           echo '</div>';
           
