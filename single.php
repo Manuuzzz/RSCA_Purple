@@ -21,7 +21,9 @@
  echo '</div>';
  echo '<div class="single_content">';
 
+ echo '<div class="single_content_thumbnail">';
  the_post_thumbnail();
+ echo '</div>';
           the_content();
           echo '</div>';
           

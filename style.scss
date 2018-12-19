@@ -44,6 +44,7 @@ $font-paint: 'Rock Salt';
         background:$dark;
         font-family: $font-stack-content;
         }
+
     }
     
     .container-main {
@@ -447,11 +448,13 @@ opacity: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 3%;
        
 .single_title {
   
-    align-self: center;
+    
+    
     font-family: $font-stack-title;
     font-size: 2em;
     font-weight: bold;
@@ -461,11 +464,31 @@ opacity: 1;
 .single_content {
 
     font-family: $font-stack-content;
- 
-  
-    color: $font-dark;
+        color: $font-dark;
 
-}
+.single_content_thumbnail {
+    text-align: center;
+
+    img {
+        
+        height: 300px;
+        width: 300px;
+    }}
+    }
+
+
+a {
+    text-decoration: none;
+    color: $salmon_1;
+    font-size: 1.1em;
+    font-weight: bold;
+    
+   
+  
+    } 
+    a:hover {
+        color: $purple_primary;
+        }
 
 }}
     
@@ -542,6 +565,7 @@ opacity: 1;
 
 
 
+  
 
 
 
@@ -1063,8 +1087,29 @@ padding: 0px;
          
           
             color: $font-dark;
-        
+            .single_content_thumbnail {
+                text-align: center;
+            
+                img {
+                    
+                    height: 300px;
+                    width: 300px;
+                }}
         }
+
+        
+        a {
+            text-decoration: none;
+            color: $salmon_1;
+            font-size: 1.1em;
+            font-weight: bold;
+            
+           
+          
+            } 
+            a:hover {
+                color: $purple_primary;
+                }
         
         }}
 

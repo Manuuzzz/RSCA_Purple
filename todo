@@ -1,35 +1,14 @@
 
-media breakpoints + images
-use icons instead of word for smaller screens (fontawesome?) - display hidden - hamburger
-mixins
-
-news onhover:line below news
-when small screen: auto slide news, only 1 box
-
 box with twitterfeed from rsca
-
-text menu bigger
-
-footer: sponsors or side box
-
-
 Favicon
 Fotos
 Evenementen
 Contact
-Set theme picture
 
 
 smaller file size for mobile screen background img
 
-move language flags to other location
-
-
-
-
 --- 
-Contact / link facebok mauversca
 single php: embed Fotos
-over ons
-favicon
+add site in google
 fontawesome locally

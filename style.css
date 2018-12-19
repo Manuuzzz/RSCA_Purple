@@ -287,9 +287,9 @@ html body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 3%; }
     .flex-index .indexContent .single_title {
-      align-self: center;
       font-family: "Raleway", "Merriweather", sans-serif;
       font-size: 2em;
       font-weight: bold;
@@ -297,6 +297,18 @@ html body {
     .flex-index .indexContent .single_content {
       font-family: "Roboto Slab", "Montserrat", sans-serif;
       color: #232323; }
+      .flex-index .indexContent .single_content .single_content_thumbnail {
+        text-align: center; }
+        .flex-index .indexContent .single_content .single_content_thumbnail img {
+          height: 300px;
+          width: 300px; }
+    .flex-index .indexContent a {
+      text-decoration: none;
+      color: #EF8354;
+      font-size: 1.1em;
+      font-weight: bold; }
+    .flex-index .indexContent a:hover {
+      color: #39367d; }
 
 .newsContainer {
   display: flex;
@@ -678,6 +690,18 @@ html body {
       .flex-index .indexContent .single_content {
         font-family: "Roboto Slab", "Montserrat", sans-serif;
         color: #232323; }
+        .flex-index .indexContent .single_content .single_content_thumbnail {
+          text-align: center; }
+          .flex-index .indexContent .single_content .single_content_thumbnail img {
+            height: 300px;
+            width: 300px; }
+      .flex-index .indexContent a {
+        text-decoration: none;
+        color: #EF8354;
+        font-size: 1.1em;
+        font-weight: bold; }
+      .flex-index .indexContent a:hover {
+        color: #39367d; }
 
   .newsContainer {
     display: flex;
