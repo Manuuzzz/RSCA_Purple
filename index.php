@@ -31,4 +31,3 @@ endwhile;
 <?php get_footer(); ?>
 
 </div> <!-- end grid-footer -->
-

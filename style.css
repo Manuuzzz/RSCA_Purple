@@ -11,7 +11,15 @@ Text Domain: RSCA_Purple
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Merriweather+Sans|Montserrat|Rock+Salt");
+@font-face {
+  font-family: 'Rock Salt';
+  src: url("fonts/RockSalt-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url("fonts/RobotoSlab-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Raleway';
+  src: url("fonts/Raleway-Regular.ttf") format("truetype"); }
 html body {
   margin: 0px;
   font-size: 1vw;
@@ -162,9 +170,9 @@ html body {
 
 .flex-menu-title {
   font-family: "Raleway", "Merriweather", sans-serif;
-  font-size: 2em;
+  font-size: 1.8em;
   margin-right: auto;
-  padding-left: 20px; }
+  padding-left: 5px; }
 
 #flex-menu-sm-listed {
   font-family: "Raleway", "Merriweather", sans-serif;
@@ -288,7 +296,9 @@ html body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3%; }
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%; }
     .flex-index .indexContent .single_title {
       font-family: "Raleway", "Merriweather", sans-serif;
       font-size: 2em;
@@ -300,8 +310,8 @@ html body {
       .flex-index .indexContent .single_content .single_content_thumbnail {
         text-align: center; }
         .flex-index .indexContent .single_content .single_content_thumbnail img {
-          height: 300px;
-          width: 300px; }
+          height: 400px;
+          width: 600px; }
     .flex-index .indexContent a {
       text-decoration: none;
       color: #EF8354;
@@ -520,7 +530,7 @@ html body {
           display: list-item;
           margin: 0px;
           padding-bottom: 20px;
-          font-size: 1.5em; }
+          font-size: 1.3em; }
           #flex-menu-sm-listed .nav-bar-sm .menu-menu1-container ul#menu-menu1 li a {
             text-decoration: none;
             color: #EDEDED; }
@@ -680,7 +690,9 @@ html body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-top: 3%; }
+      margin-top: 3%;
+      margin-left: 3%;
+      margin-right: 3%; }
       .flex-index .indexContent .single_title {
         align-self: center;
         font-family: "Raleway", "Merriweather", sans-serif;
@@ -693,8 +705,8 @@ html body {
         .flex-index .indexContent .single_content .single_content_thumbnail {
           text-align: center; }
           .flex-index .indexContent .single_content .single_content_thumbnail img {
-            height: 300px;
-            width: 300px; }
+            height: 320px;
+            width: 400px; }
       .flex-index .indexContent a {
         text-decoration: none;
         color: #EF8354;

@@ -1,6 +1,3 @@
-
-
-
 <?php get_header(); ?>
 
 
@@ -19,7 +16,9 @@
         echo '<div class="single_title">';
  the_title();
  echo '</div>';
+ echo '<br />';
  echo '<div class="single_content">';
+ echo '<br /><br />';
 
  echo '<div class="single_content_thumbnail">';
  the_post_thumbnail();
@@ -43,4 +42,3 @@
 <?php get_footer(); ?>
 
 </div> <!-- end grid-footer -->
-

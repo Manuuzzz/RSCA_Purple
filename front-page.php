@@ -3,15 +3,27 @@
 <html <?php language_attributes(); ?>>
 
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130056157-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130056157-1');
+</script>
+
 
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Supportersclub, RSCA, 64 Les Géiants d'ath, 64lesgeiantsdath, MissMauve, Miss Mauve, Fanclub, Anderlecht">
+    <meta name="keywords" content="Supportersclub, RSCA, 64 Les Géiants d'ath, 64lesgeiantsdath, MissMauve, Miss Mauve, Fanclub, Anderlecht">
     <meta name="author" content="Emmanuel Lamon">
+    
 
     <title><?php bloginfo('name'); ?></title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    -->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <script src="<?php bloginfo('template_directory'); ?>/scripts/front.js"></script>
 
@@ -151,4 +163,3 @@ endwhile;
 <?php get_footer(); ?>
 
 </div> <!-- end grid-footer -->
-

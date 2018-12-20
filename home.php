@@ -71,4 +71,3 @@ wp_reset_postdata();
 <?php get_footer(); ?>
 
 </div> <!-- end grid-footer -->
-
