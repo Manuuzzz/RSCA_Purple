@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html <?php language_attributes(); ?>>
 
@@ -25,7 +25,33 @@
     -->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <script src="<?php bloginfo('template_directory'); ?>/scripts/front.js"></script>
+
+    <script type="application/ld+json">
+	{
+	"@context" : "http://schema.org",
+	"@type" : "Supportersclub",
+	"url" : "https://www.64lesgeiantsdath.be",
+	"logo" : "https://www.64lesgeiantsdath.be/wp-content/uploads/2018/12/logo.png",
+	"image" : "https://www.64lesgeiantsdath.be/wp-content/uploads/2018/12/logo.png",
+	"name" : "64 Les Géiants d'Ath - Supportersclub RSCA",
+	"description" : "We post news and photos from our supportersclub - 64 Les Géiants d'Ath",
+	"telephone" : "",
+	"email" : "emmanuel.lamon@gmail.com",
+	"address" : [{
+	"@type" : "PostalAddress",
+	"streetAddress" : "",
+	"postalCode" : "",
+	"addressLocality" : "",
+	"addressCountry" : "BE"
+	}],
+	"sameAs" : [
+	"https://www.64lesgeiantsdath.be"
+	]
+	}
+	</script>
     <?php wp_head(); ?>
+</head>
+
 
 
     <div class="container">
@@ -121,5 +147,5 @@ $args = array(
 </header>
 </div> <!-- end grid-menu -->
 
-</head>
+
 <body onload="refreshSponsorImages()" onresize="hideMenu()">
