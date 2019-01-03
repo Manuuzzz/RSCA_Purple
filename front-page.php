@@ -19,11 +19,11 @@
     <meta name="description" content="Supportersclub, RSCA, 64 Les Géiants d'ath, 64lesgeiantsdath, MissMauve, Miss Mauve, Fanclub, Anderlecht">
     <meta name="keywords" content="Supportersclub, RSCA, 64 Les Géiants d'ath, 64lesgeiantsdath, MissMauve, Miss Mauve, Fanclub, Anderlecht">
     <meta name="author" content="Emmanuel Lamon">
-    <link rel="canonical" href="https://example.com/dresses/green-dresses" />
+    
 
     <title><?php bloginfo('name'); ?></title>
-   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <script src="<?php bloginfo('template_directory'); ?>/scripts/front.js"></script>
 
