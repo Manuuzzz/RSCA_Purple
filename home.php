@@ -23,8 +23,17 @@ $query = new WP_Query( $args );
 
 
 echo '<div class="flex-news-container">';
+
+
+echo '<div class="zoom-container">';
+echo '<a class="twitter-timeline" href="https://twitter.com/rscanderlecht?ref_src=twsrc%5Etfw" data-chrome="noheader noborder nofooter transparent" data-tweet-limit="1" data-width: "485" data-height: 509" data-aria-polite="assertive"></a> 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
+echo '</div>';
+
+
 if ($query ->have_posts() ) : while ( $query ->have_posts() ) : $query ->the_post(); 
 if(  has_post_thumbnail()) :
+
   echo '<a href="'.get_the_permalink().'">';
   echo '<div class="zoom-container">';
 
@@ -56,7 +65,9 @@ if(  has_post_thumbnail()) :
   endif;
 endwhile; 
 endif; 
+
 echo '</div>';
+
 
 wp_reset_postdata();
 ?>

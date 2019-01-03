@@ -269,11 +269,11 @@ html body {
 
 .flex-thumbnail-content {
   font-family: "Raleway", "Merriweather", sans-serif;
+  color: #232323;
   padding: 0px;
   padding-top: 10px;
   margin-top: 0px;
-  margin-bottom: 0px;
-  color: #232323; }
+  margin-bottom: 0px; }
   .flex-thumbnail-content p {
     margin-top: 4px; }
 

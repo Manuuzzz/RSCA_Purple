@@ -1,3 +1,16 @@
+function twitterStyling() {
+    var widgetCSS = "" +
+".timeline-Tweet-text{color: #232323;font-size: 1.3em !important; padding: 3px; }"+
+".SandboxRoot.env-bp-330 .timeline-Tweet-text{line-height: 22px;}"
+var w = document.getElementById("twitter-widget-0").contentDocument;
+
+var s = document.createElement("style");
+s.innerHTML = widgetCSS;
+s.type = "text/css";
+w.head.appendChild(s);
+
+
+}
 
 sponsorImagesArray = new Array();
 sponsorImagesArray[0] = new Image();
@@ -20,10 +33,12 @@ function hideMenu() {
     let menu = document.getElementById("flex-menu-sm-listed");
     menu.style.display = "none";
 
+ 
+
 }
 
 
-function refreshSponsorImages(){
+/*function refreshSponsorImages(){
 
 templateUrl = object_name.templateUrl;
 sponsorImagesArray[0].src= templateUrl + "/images/bjjbelt.jpg"
@@ -49,4 +64,4 @@ x = 0;
 
 }
 
-  
+  */
