@@ -24,7 +24,7 @@
 
     <title><?php bloginfo('name'); ?></title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    
+	<script src="<?php bloginfo('template_directory'); ?>/scripts/TweenMax.min.js"></script>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <script src="<?php bloginfo('template_directory'); ?>/scripts/front.js"></script>
 
@@ -54,7 +54,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body onload="twitterStyling()" onresize="hideMenu()"><!-- onload="refreshSponsorImages()"  -->
+<body onload="start()" onresize="hideMenu()"><!-- onload="refreshSponsorImages()"  -->
 
     <div class="container">
 
@@ -65,7 +65,7 @@
 
 <div class="flex-logo-sm"><!-- this is visible in small screens -->
 <div class="logo"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="RSCA Logo"></div>
-<div class="RSCA">
+<div class="RSCA" id="tweenColor">
 RSCA
 </div></div>
 
@@ -80,7 +80,7 @@ $args = array(
 <?php wp_nav_menu($args); ?>
 
 <div class="flex-menu-sm"><!-- this is visible in small screens -->
-<div class="flex-menu-title-sm"><span class="colorsalmon2">64</span> Les Géiants d'Ath</div>
+<div class="flex-menu-title-sm"><span class="colorsalmon2" >64</span> Les Géiants d'Ath</div>
 
 <div class="flex-menu-sm-icons colorsalmon1" onclick="toggleMenu()"><a href="#"><i class="fas fa-bars"></i></a></div>
 </div>
@@ -111,7 +111,7 @@ $args = array(
 <h1><?php bloginfo('name'); ?></h1>
 <h3 class="colorsalmon1"><?php bloginfo('description'); ?></h3>
 </div>
-<div class="RSCA">
+<div class="RSCA" id="tweenColor">
 RSCA
 </div>
 </div>  <!-- end flex-logo -->

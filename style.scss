@@ -32,6 +32,12 @@ $fluo_salmon: #ffb482;
 $font-stack-title:'Raleway','Merriweather',sans-serif;
 $font-stack-content:'Roboto Slab','Montserrat',sans-serif;
 $font-paint: 'Rock Salt';
+
+:root {
+    --tweenColor1: #6860ad;
+
+  }
+
 @font-face {
 
 font-family: 'Rock Salt';
@@ -137,6 +143,11 @@ src: url('fonts/RockSalt-Regular.ttf') format('truetype');
     font-family: $font-paint;
     font-weight: bold;
     color: $purple_primary;
+        }
+
+        #tweenColor {
+       
+            color: var(--tweenColor1);
         }
     
     }
@@ -305,9 +316,10 @@ display: none;
     
     .colorsalmon1 {
     color: $salmon_1;
+ 
     }
     
-   
+
     
     .grid-content {
     grid-area: grid-content;
@@ -599,6 +611,8 @@ a {
 // default max width
 @media (max-width: 1200px){
 
+
+
 html {
     body {
     margin: 0px;
@@ -650,6 +664,31 @@ border: 0px;
 
 }
 
+.colorsalmon2 {
+    color: $salmon_2;
+    }
+    
+    .colorsalmon1 {
+    color: $salmon_1;
+    }
+
+.flex-logo {
+
+    background-color: $lightgray;
+    position: relative;
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $font-dark;
+    
+       
+    
+    }
+
 .flex-logo-sm {
     
     background-color: $lightgray;
@@ -659,8 +698,6 @@ border: 0px;
     justify-content: center;
     align-items: center;
     padding: 10px;
-
-    
     color: $font-dark;
 
     .RSCA {
@@ -671,28 +708,15 @@ border: 0px;
     padding-left: 40px;
       
             }
+        #tweenColor {
+       
+                color: var(--tweenColor1);
+            }
+
+          
   }
 
-.flex-logo {
 
-background-color: $lightgray;
-position: relative;
-display: none;
-flex-direction: row;
-width: 100%;
-justify-content: center;
-align-items: center;
-padding-top: 10px;
-padding-bottom: 10px;
-color: $font-dark;
-.RSCA {
-font-size: 2.5em;
-font-family: $font-paint;
-font-weight: bold;
-color: $purple_primary;
-    }
-
-}
 
 
 
@@ -928,13 +952,7 @@ padding-left: 20px;
     
     }
 
-.colorsalmon2 {
-color: $salmon_2;
-}
 
-.colorsalmon1 {
-color: $salmon_1;
-}
 
 
 

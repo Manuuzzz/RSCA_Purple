@@ -27,8 +27,10 @@ add_action('after_setup_theme','RSCA_purple_theme_setup');
 
 function loadMyScripts() {
 
-wp_register_script('custom-js','./scripts/front.js');
+wp_register_script('custom-js',get_template_directory_uri().'/scripts/front.js');
+wp_register_script('custom-js2',get_template_directory_uri().'/scripts/TweenMax.min.js');
 wp_enqueue_script('custom-js');
+wp_enqueue_script('custom-js2');
 $translation_array = array( 'templateUrl' => get_stylesheet_directory_uri() );
 //after wp_enqueue_script
 wp_localize_script( 'custom-js', 'object_name', $translation_array );

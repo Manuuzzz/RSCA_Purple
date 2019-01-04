@@ -11,6 +11,9 @@ Text Domain: RSCA_Purple
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+:root {
+  --tweenColor1: #6860ad; }
+
 @font-face {
   font-family: 'Rock Salt';
   src: url("fonts/RockSalt-Regular.ttf") format("truetype"); }
@@ -78,6 +81,8 @@ html body {
     font-family: "Rock Salt";
     font-weight: bold;
     color: #39367d; }
+  .flex-logo #tweenColor {
+    color: var(--tweenColor1); }
 
 .logo img {
   max-width: 150px;
@@ -398,6 +403,24 @@ html body {
     width: 100%;
     border: 0px; }
 
+  .colorsalmon2 {
+    color: #ff9f7c; }
+
+  .colorsalmon1 {
+    color: #EF8354; }
+
+  .flex-logo {
+    background-color: #EDEDED;
+    position: relative;
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #232323; }
+
   .flex-logo-sm {
     background-color: #EDEDED;
     display: flex;
@@ -413,23 +436,8 @@ html body {
       font-weight: bold;
       color: #39367d;
       padding-left: 40px; }
-
-  .flex-logo {
-    background-color: #EDEDED;
-    position: relative;
-    display: none;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: #232323; }
-    .flex-logo .RSCA {
-      font-size: 2.5em;
-      font-family: "Rock Salt";
-      font-weight: bold;
-      color: #39367d; }
+    .flex-logo-sm #tweenColor {
+      color: var(--tweenColor1); }
 
   .logo img {
     max-width: 150px;
@@ -574,12 +582,6 @@ html body {
     font-size: 3vh;
     margin-right: auto;
     padding-left: 20px; }
-
-  .colorsalmon2 {
-    color: #ff9f7c; }
-
-  .colorsalmon1 {
-    color: #EF8354; }
 
   .grid-content {
     grid-area: grid-content;

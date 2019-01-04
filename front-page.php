@@ -23,7 +23,7 @@
 
     <title><?php bloginfo('name'); ?></title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    
+    <script src="<?php bloginfo('template_directory'); ?>/scripts/TweenMax.min.js"></script>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <script src="<?php bloginfo('template_directory'); ?>/scripts/front.js"></script>
 
@@ -53,6 +53,8 @@
 
   <?php wp_head(); ?>
   </head>
+
+  <body onload="tweenTitle()" onresize="hideMenu()">
     <div class="container-main">
 
 
@@ -63,7 +65,7 @@
 
 <div class="flex-logo-sm"><!-- this is visible in small screens -->
 <div class="logo"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="RSCA Logo"></div>
-<div class="RSCA">
+<div class="RSCA" id="tweenColor">
 RSCA
 </div></div>
 <div class="flex-menu-sm-container">
@@ -108,7 +110,7 @@ $args = array(
 <h1><?php bloginfo('name'); ?></h1>
 <h3 class="colorsalmon1"><?php bloginfo('description'); ?></h3>
 </div>
-<div class="RSCA">
+<div class="RSCA" id="tweenColor">
 RSCA
 </div>
 </div>  <!-- end flex-logo -->
@@ -150,7 +152,7 @@ $args = array(
 
 
 
-<body  onresize="hideMenu()">
+
 
 
 

@@ -1,4 +1,19 @@
+function start() {
+
+tweenTitle();
+twitterStyling();
+
+}
+
+function tweenTitle() {
+    
+    TweenMax.to("#tweenColor", 1, {"--tweenColor1":"#39367d",  yoyo:true, repeat:50});
+
+}
+
 function twitterStyling() {
+
+   
     var widgetCSS = "" +
 ".timeline-Tweet-text{color: #232323;font-size: 1.3em !important; padding: 3px; }"+
 ".SandboxRoot.env-bp-330 .timeline-Tweet-text{line-height: 22px;}"
